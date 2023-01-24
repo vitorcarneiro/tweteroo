@@ -23,7 +23,7 @@ public class TweetService {
             newTweet.put("id", tweet.getId().toString());
             newTweet.put("text", tweet.getText());
             newTweet.put("userId", tweet.getUser().getId().toString());
-            newTweet.put("username", tweet.getUser().getName());
+            newTweet.put("username", tweet.getUser().getUsername());
             newTweet.put("avatar", tweet.getUser().getAvatar());
 
             tweets.add(newTweet);
