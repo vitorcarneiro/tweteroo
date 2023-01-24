@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class User {
     public User(UserDTO dto) {
-        this.name = dto.name();
+        this.username = dto.username();
         this.avatar = dto.avatar();
     }
 
@@ -20,8 +20,8 @@ public class User {
     private Long id;
 
     @Column(length = 50, nullable = false)
-    private String name;
+    private String username;
 
-    @Column(nullable = false)
+    @Column(length = 2000, nullable = false)
     private String avatar;
 }

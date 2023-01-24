@@ -1,7 +1,6 @@
 package com.tweteroo.tweteroo.controllers;
 
 import com.tweteroo.tweteroo.dtos.TweetDTO;
-import com.tweteroo.tweteroo.models.Tweet;
 import com.tweteroo.tweteroo.models.User;
 import com.tweteroo.tweteroo.services.TweetService;
 import com.tweteroo.tweteroo.services.UserService;
@@ -32,7 +31,7 @@ public class TweetController {
         User user = userService.findById(req.userId()).orElseThrow(NotFoundException::new);
 
         System.out.println(req.text());
-        System.out.println(user.getName());
+        System.out.println(user.getUsername());
         System.out.println(user.getAvatar());
 
         tweetService.create(req.text(), user);

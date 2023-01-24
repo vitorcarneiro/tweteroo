@@ -2,7 +2,6 @@ package com.tweteroo.tweteroo.controllers;
 
 import com.tweteroo.tweteroo.dtos.UserDTO;
 import com.tweteroo.tweteroo.models.User;
-import com.tweteroo.tweteroo.repositories.UserRepository;
 import com.tweteroo.tweteroo.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/auth/signup")
+@RequestMapping("/auth/sign-up")
 public class UserController {
 
     @Autowired

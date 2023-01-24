@@ -1,8 +1,6 @@
 package com.tweteroo.tweteroo.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.tweteroo.tweteroo.dtos.TweetDTO;
-import com.tweteroo.tweteroo.services.UserService;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
