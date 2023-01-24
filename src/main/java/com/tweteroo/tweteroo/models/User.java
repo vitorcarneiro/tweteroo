@@ -3,10 +3,12 @@ package com.tweteroo.tweteroo.models;
 import com.tweteroo.tweteroo.dtos.UserDTO;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity
 @Table(name = "Users")
+@NoArgsConstructor
 public class User {
     public User(UserDTO dto) {
         this.name = dto.name();
@@ -22,8 +24,4 @@ public class User {
 
     @Column(nullable = false)
     private String avatar;
-
-    public User() {
-
-    }
 }
