@@ -26,7 +26,7 @@ public class Tweet {
     @Column(length = 144)
     private String text;
 
-    @OneToOne(optional = false, fetch = FetchType.EAGER)
+    @ManyToOne(optional = false, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore

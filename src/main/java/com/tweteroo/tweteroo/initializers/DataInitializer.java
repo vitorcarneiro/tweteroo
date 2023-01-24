@@ -17,7 +17,7 @@ public class DataInitializer {
     public void initialize() {
         int usersAmount = 5;
 
-        for (int i = 0; i < usersAmount; i++) {
+        for (int i = 1; i <= usersAmount; i++) {
             User user = new User(new UserDTO("user" + i,"https://picsum.photos/id/" + i + "/200/200"));
             userRepository.save(user);
         }
